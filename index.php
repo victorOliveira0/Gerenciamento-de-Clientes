@@ -27,7 +27,7 @@ if (!$testeconexao) {
                 <th>Telefone</th>
                 <th>Ações</th>
             </tr>
-            <?php while($row = testeconexao->fetch_assoc()): ?>
+            <?php while($row = $testeconexao->fetch_assoc()): ?>
             <tr>
                 <td><img src="<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" width="50"></td>
                 <td><?php echo $row['name']; ?></td>
