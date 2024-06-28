@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS client_management;
+
+USE client_management;
+
+CREATE TABLE IF NOT EXISTS clients (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL,
+    photo VARCHAR(255) NULL
+);
+
+DROP TABLE clients;
